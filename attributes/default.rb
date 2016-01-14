@@ -1,6 +1,8 @@
 include_attribute "hadoop"
 
-default[:hadoop][:version]                 = "2.4.0"
+node.override[:download_url] = "http://193.10.67.171/hops/salman"
+
+default[:hadoop][:version]                 = "2.0.4-alpha"
 default[:hdfs][:user]                      = "hdfs"
 default[:hadoop][:group]                   = "hadoop"
 default[:hadoop][:dir]                     = "/srv"
